@@ -1,6 +1,8 @@
 # Mubasher Ahmed — Portfolio
 
-A one-page, responsive developer portfolio for **Mubasher Ahmed**, Full Stack JavaScript Developer. Built with React + Vite + Tailwind CSS, featuring dark mode, a working contact form, and three demo projects.
+A one-page, responsive developer portfolio for **Mubasher Ahmed**, Full Stack JavaScript Developer. Built with React + Vite + Tailwind CSS, featuring dark mode, a working contact form, and links to three standalone demo projects.
+
+**Live site:** https://mubasher-ahmed.vercel.app
 
 ## Tech Stack
 - **Frontend:** React 18, Vite, Tailwind CSS
@@ -8,25 +10,21 @@ A one-page, responsive developer portfolio for **Mubasher Ahmed**, Full Stack Ja
 - **Dark mode:** Tailwind `darkMode: "class"` with `localStorage` persistence + system preference
 
 ## Getting Started
-
-### Main portfolio
 ```bash
-cd portfolio
 npm install
 npm run dev        # local dev at http://localhost:5173
 npm run build      # production build -> dist/
 ```
 
-### To make the contact form work
+### Make the contact form work
 1. Create a free account at [emailjs.com](https://www.emailjs.com).
-2. Create a Service, an Email Template (with fields `name`, `email`, `message`), and copy your keys.
+2. Create a Service, an Email Template (fields `name`, `email`, `message`), and copy your keys.
 3. Open `src/components/Contact.jsx` and replace:
    ```js
    const SERVICE_ID = 'YOUR_SERVICE_ID'
    const TEMPLATE_ID = 'YOUR_TEMPLATE_ID'
    const PUBLIC_KEY = 'YOUR_PUBLIC_KEY'
    ```
-4. Replace `public/resume.pdf` and `public/og-image.png` with your own files.
 
 ### Edit your info
 All name, links, stats, skills, projects, and FAQ content live in one file:
@@ -34,56 +32,22 @@ All name, links, stats, skills, projects, and FAQ content live in one file:
 src/data/content.js
 ```
 
-## Demo Projects
+## Demo Projects (standalone repos)
+Each demo is a separate GitHub repo with its own README and Vercel deployment:
 
-### 1. Landing page — `projects/landing-page/`
-A responsive SaaS-style landing page (Figma-to-code style). React + Tailwind.
-```bash
-cd projects/landing-page && npm install && npm run dev
-```
-
-### 2. Full-Stack CRUD App — `projects/crud-app/`
-Task manager with JWT auth. React frontend + Express/MongoDB backend.
-```bash
-# Frontend
-cd projects/crud-app && npm install && npm run dev
-
-# Backend (separate terminal)
-cd projects/crud-app/backend
-npm install
-cp .env.example .env   # add your MONGO_URI and JWT_SECRET
-npm run dev
-```
-Set the frontend to your deployed API:
-```
-VITE_API_URL=https://your-backend-url/api   # in projects/crud-app/.env
-```
-
-### 3. Firebase App — `projects/firebase-app/`
-Realtime task list using **Firebase Auth** and **Firestore**.
-```bash
-cd projects/firebase-app && npm install && npm run dev
-```
-1. Create a Firebase project, enable Email/Password auth, and create a Firestore database.
-2. Paste your web config into `src/firebase/config.js`.
+| Project | Repo | Live |
+|---|---|---|
+| Landing Page | [github.com/Mubasher-Ahmed7/landing-page-demo](https://github.com/Mubasher-Ahmed7/landing-page-demo) | https://landing-page-demo.vercel.app |
+| Full-Stack CRUD App | [github.com/Mubasher-Ahmed7/crud-app-demo](https://github.com/Mubasher-Ahmed7/crud-app-demo) | https://crud-app-demo.vercel.app |
+| Firebase Realtime App | [github.com/Mubasher-Ahmed7/firebase-app-demo](https://github.com/Mubasher-Ahmed7/firebase-app-demo) | https://firebase-app-demo.vercel.app |
 
 ## Deploying to Vercel (free)
-
-### Main portfolio
 1. Push the repo to GitHub.
 2. On [vercel.com](https://vercel.com), click **New Project > Import** your repo.
 3. Framework: **Vite** (auto-detected). Build command `npm run build`, output `dist`.
 4. Deploy → your site is live at `mubasher-ahmed.vercel.app`.
 
-### Deploying demo sub-projects
-Recommended option: **deploy each demo as its own Vercel project** (clean URLs):
-- `landing-page` → project A
-- `crud-app` → project B (frontend) + deploy the `/backend` to [Render](https://render.com) free tier
-- `firebase-app` → project C
-
-Then update the "Live Demo" links in `src/data/content.js` to the deployed URLs.
-
-> Note: The sub-projects are separate `package.json` apps. If you want them served under one domain, deploy each as its own Vercel project or set up a monorepo root with framework-preset auto-detection.
+> The CRUD app backend runs on **Render** (free tier). See [crud-app-demo/README.md](https://github.com/Mubasher-Ahmed7/crud-app-demo) for deployment steps.
 
 ## Customization checklist
 - [ ] `src/data/content.js` — your name, links, projects, FAQ

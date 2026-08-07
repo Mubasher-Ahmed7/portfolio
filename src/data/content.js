@@ -33,8 +33,8 @@ export const projects = [
     description:
       'A clean, mobile-first business landing page converted from a Figma design to production-ready code with Tailwind CSS.',
     tech: ['React', 'Tailwind CSS', 'Figma-to-Code'],
-    live: '/projects/landing-page/',
-    repo: 'https://github.com/Mubasher-Ahmed7',
+    live: 'https://landing-page-demo.vercel.app',
+    repo: 'https://github.com/Mubasher-Ahmed7/landing-page-demo',
     accent: 'from-sky-500 to-indigo-600',
     icon: '🎯',
   },
@@ -43,8 +43,8 @@ export const projects = [
     description:
       'A task manager with user registration, JWT authentication, and full CRUD operations built on MongoDB and Express.',
     tech: ['React', 'Node.js', 'Express', 'MongoDB', 'JWT'],
-    live: '/projects/crud-app/',
-    repo: 'https://github.com/Mubasher-Ahmed7',
+    live: 'https://crud-app-demo.vercel.app',
+    repo: 'https://github.com/Mubasher-Ahmed7/crud-app-demo',
     accent: 'from-emerald-500 to-teal-600',
     icon: '🗂️',
   },
@@ -53,8 +53,8 @@ export const projects = [
     description:
       'A real-time task list using Firebase Authentication and Firestore with no backend server required.',
     tech: ['React', 'Firebase Auth', 'Firestore'],
-    live: '/projects/firebase-app/',
-    repo: 'https://github.com/Mubasher-Ahmed7',
+    live: 'https://firebase-app-demo.vercel.app',
+    repo: 'https://github.com/Mubasher-Ahmed7/firebase-app-demo',
     accent: 'from-orange-500 to-amber-600',
     icon: '☁️',
   },
