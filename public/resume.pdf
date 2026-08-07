@@ -1,24 +1,70 @@
 %PDF-1.4
-1 0 obj<</Type/Catalog/Pages 2 0 R>>endobj
-2 0 obj<</Type/Pages/Kids[3 0 R]/Count 1>>endobj
-3 0 obj<</Type/Page/Parent 2 0 R/MediaBox[0 0 612 792]/Contents 4 0 R/Resources<</Font<</F1 5 0 R>>>>>>endobj
-4 0 obj<</Length 200>>stream
-BT /F1 24 Tf 72 720 Td (Mubasher Ahmed) Tj ET
-BT /F1 14 Tf 72 690 Td (Full Stack JavaScript Developer) Tj ET
-BT /F1 12 Tf 72 660 Td (Email: mubasherahmed131@gmail.com) Tj ET
-BT /F1 12 Tf 72 642 Td (Placeholder resume - replace public/resume.pdf with your CV.) Tj ET
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 4 0 R /F2 5 0 R >> >> /Contents 6 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+6 0 obj
+<< /Length 3022 >>
+stream
+0.95 0.95 0.97 rg 0 0 595 842 re f
+BT /F1 24 Tf 0.10 0.10 0.12 rg 56 768 Td (MUBASHER AHMED) Tj ET
+BT /F1 13 Tf 0.24 0.23 0.62 rg 56 744 Td (Full Stack JavaScript Developer) Tj ET
+0.80 0.80 0.84 rg 56 730 483 0.8 re f
+BT /F2 9.5 Tf 0.32 0.32 0.36 rg 56 714 Td (Rawalpindi, Pakistan  |  mubasherahmed131@gmail.com  |  +92 311 8692399) Tj ET
+BT /F2 9.5 Tf 0.32 0.32 0.36 rg 56 700 Td (GitHub: github.com/Mubasher-Ahmed7   LinkedIn: linkedin.com/in/mubasher-ahmed-6a0b57398) Tj ET
+BT /F2 9.5 Tf 0.32 0.32 0.36 rg 56 686 Td (Upwork: upwork.com/freelancers/~01c1a192b9c3c193a3   Freelancer: freelancer.com/u/mubasharahmed131) Tj ET
+BT /F1 12 Tf 0.10 0.10 0.12 rg 56 656 Td (SUMMARY) Tj ET
+0.80 0.80 0.84 rg 56 648 483 0.8 re f
+BT /F2 10 Tf 0.32 0.32 0.36 rg 56 628 Td (Passionate Full Stack JavaScript Developer focused on building modern, responsive, and high-performance websites and) Tj ET
+BT /F2 10 Tf 0.32 0.32 0.36 rg 56 613 Td (web applications. Skilled in React.js, Node.js, Express.js, MongoDB, and Firebase. Values clean code, clear) Tj ET
+BT /F2 10 Tf 0.32 0.32 0.36 rg 56 598 Td (communication, problem-solving, and delivering quality work on time.) Tj ET
+BT /F1 12 Tf 0.10 0.10 0.12 rg 56 556 Td (EDUCATION) Tj ET
+0.80 0.80 0.84 rg 56 548 483 0.8 re f
+BT /F1 11 Tf 0.10 0.10 0.12 rg 56 530 Td (BS Computer Science - Virtual University of Pakistan) Tj ET
+BT /F2 9.5 Tf 0.55 0.55 0.58 rg 56 518 Td (April 2026 - Present) Tj ET
+BT /F1 12 Tf 0.10 0.10 0.12 rg 56 484 Td (SKILLS) Tj ET
+0.80 0.80 0.84 rg 56 476 483 0.8 re f
+BT /F1 10 Tf 0.10 0.10 0.12 rg 56 458 Td (Frontend:) Tj ET
+BT /F2 10 Tf 0.32 0.32 0.36 rg 116 458 Td (HTML5, CSS3, JavaScript \(ES6+\), TypeScript \(basics\), React.js, Tailwind CSS, Bootstrap) Tj ET
+BT /F1 10 Tf 0.10 0.10 0.12 rg 56 443 Td (Backend:) Tj ET
+BT /F2 10 Tf 0.32 0.32 0.36 rg 116 443 Td (Node.js, Express.js, REST APIs, JWT Authentication, CRUD Operations) Tj ET
+BT /F1 10 Tf 0.10 0.10 0.12 rg 56 428 Td (Database:) Tj ET
+BT /F2 10 Tf 0.32 0.32 0.36 rg 116 428 Td (MongoDB, Firebase / Firestore) Tj ET
+BT /F1 10 Tf 0.10 0.10 0.12 rg 56 413 Td (Tools:) Tj ET
+BT /F2 10 Tf 0.32 0.32 0.36 rg 116 413 Td (Git, GitHub, VS Code, Vite, npm, Figma-to-Code) Tj ET
+BT /F1 12 Tf 0.10 0.10 0.12 rg 56 392 Td (PROJECTS) Tj ET
+0.80 0.80 0.84 rg 56 384 483 0.8 re f
+BT /F1 11 Tf 0.10 0.10 0.12 rg 56 366 Td (Responsive Landing Page) Tj ET
+BT /F2 9.5 Tf 0.32 0.32 0.36 rg 56 351 Td (Business landing page converted from Figma to responsive code using React and Tailwind CSS.) Tj ET
+BT /F1 11 Tf 0.10 0.10 0.12 rg 56 333 Td (Full-Stack CRUD App) Tj ET
+BT /F2 9.5 Tf 0.32 0.32 0.36 rg 56 318 Td (Task manager with registration, JWT authentication, and full CRUD operations \(React + Express + MongoDB\).) Tj ET
+BT /F1 11 Tf 0.10 0.10 0.12 rg 56 300 Td (Firebase Realtime App) Tj ET
+BT /F2 9.5 Tf 0.32 0.32 0.36 rg 56 285 Td (Realtime task list using Firebase Authentication and Firestore with no backend server.) Tj ET
+BT /F2 9 Tf 0.55 0.55 0.58 rg 56 40 Td (References available upon request.) Tj ET
 endstream
 endobj
-5 0 obj<</Type/Font/Subtype/Type1/BaseFont/Helvetica>>endobj
 xref
-0 6
+0 7
 0000000000 65535 f 
 0000000009 00000 n 
 0000000058 00000 n 
 0000000115 00000 n 
-0000000240 00000 n 
-0000000460 00000 n 
-trailer<</Size 6/Root 1 0 R>>
+0000000251 00000 n 
+0000000326 00000 n 
+0000000396 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
 startxref
-490
+3470
 %%EOF
