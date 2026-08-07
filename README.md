@@ -47,7 +47,7 @@ Each demo is a separate GitHub repo with its own README and Vercel deployment:
 3. Framework: **Vite** (auto-detected). Build command `npm run build`, output `dist`.
 4. Deploy → your site is live at `mubasher-ahmed.vercel.app`.
 
-> The CRUD app backend runs on **Render** (free tier). See [crud-app-demo/README.md](https://github.com/Mubasher-Ahmed7/crud-app-demo) for deployment steps.
+> The CRUD app's backend runs as a **Vercel serverless function** (free). See [crud-app-demo/README.md](https://github.com/Mubasher-Ahmed7/crud-app-demo) for details.
 
 ## Customization checklist
 - [ ] `src/data/content.js` — your name, links, projects, FAQ
