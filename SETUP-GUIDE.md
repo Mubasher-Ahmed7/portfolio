@@ -77,9 +77,15 @@ Everything that's a placeholder right now is marked with `YOUR_`.
 
 1. Create a free MongoDB cluster:
    - Go to https://www.mongodb.com/atlas → **Start Free** → build a Shared (M0) cluster.
-   - Under **Database Access**: create a DB user with a strong password.
-   - Under **Network Access**: click **Add IP Address → Allow access from anywhere** (`0.0.0.0/0`) for now.
-2. **Connect → Drivers** → copy the connection string, e.g.
+   - In the left sidebar, click **Security → Database & Network Access** (this is the combined page — the old separate "Database Access" and "Network Access" menus no longer exist).
+2. Create the DB user (on that same page, **Database Users** tab → **Add New Database User**):
+   - Authentication method: **Password**
+   - Username: e.g. `mubasher`
+   - Password: use **Autogenerate Secure Password** → copy it somewhere safe (Atlas won't show it again)
+   - Privileges: leave default (**Atlas admin** built-in role) → **Add User**
+3. Allow connections (same page, **Network Access** tab → **Add IP Address**):
+   - Toggle **Allow access from anywhere** (`0.0.0.0/0`) → Confirm
+4. **Connect → Drivers** → copy the connection string, e.g.
    ```
    mongodb+srv://<user>:<password>@cluster0.xxxx.mongodb.net/taskmanager
    ```
