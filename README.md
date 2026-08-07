@@ -37,8 +37,8 @@ Each demo is a separate GitHub repo with its own README and Vercel deployment:
 
 | Project | Repo | Live |
 |---|---|---|
-| Landing Page | [github.com/Mubasher-Ahmed7/landing-page-demo](https://github.com/Mubasher-Ahmed7/landing-page-demo) | https://landing-page-demo.vercel.app |
-| Full-Stack CRUD App | [github.com/Mubasher-Ahmed7/crud-app-demo](https://github.com/Mubasher-Ahmed7/crud-app-demo) | https://crud-app-demo.vercel.app |
+| Landing Page | [github.com/Mubasher-Ahmed7/landing-page-demo](https://github.com/Mubasher-Ahmed7/landing-page-demo) | https://landing-page-demo-lyart.vercel.app |
+| Full-Stack CRUD App | [github.com/Mubasher-Ahmed7/crud-app-demo](https://github.com/Mubasher-Ahmed7/crud-app-demo) | https://crud-app-demo-olive.vercel.app |
 | Firebase Realtime App | [github.com/Mubasher-Ahmed7/firebase-app-demo](https://github.com/Mubasher-Ahmed7/firebase-app-demo) | https://firebase-app-demo.vercel.app |
 
 ## Deploying to Vercel (free)

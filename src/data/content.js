@@ -33,7 +33,7 @@ export const projects = [
     description:
       'A clean, mobile-first business landing page converted from a Figma design to production-ready code with Tailwind CSS.',
     tech: ['React', 'Tailwind CSS', 'Figma-to-Code'],
-    live: 'https://landing-page-demo.vercel.app',
+    live: 'https://landing-page-demo-lyart.vercel.app',
     repo: 'https://github.com/Mubasher-Ahmed7/landing-page-demo',
     accent: 'from-sky-500 to-indigo-600',
     icon: '🎯',
@@ -43,7 +43,7 @@ export const projects = [
     description:
       'A task manager with user registration, JWT authentication, and full CRUD operations built on MongoDB and Express.',
     tech: ['React', 'Node.js', 'Express', 'MongoDB', 'JWT'],
-    live: 'https://crud-app-demo.vercel.app',
+    live: 'https://crud-app-demo-olive.vercel.app',
     repo: 'https://github.com/Mubasher-Ahmed7/crud-app-demo',
     accent: 'from-emerald-500 to-teal-600',
     icon: '🗂️',
