@@ -7,9 +7,9 @@ export default function Contact() {
   const [status, setStatus] = useState('')
 
   // TODO: Replace with your EmailJS service/template/public key from https://www.emailjs.com
-  const SERVICE_ID = 'YOUR_SERVICE_ID'
-  const TEMPLATE_ID = 'YOUR_TEMPLATE_ID'
-  const PUBLIC_KEY = 'YOUR_PUBLIC_KEY'
+  const SERVICE_ID = 'service_nndb7a5'
+  const TEMPLATE_ID = 'template_pp5vck4'
+  const PUBLIC_KEY = 'cWR5wfJTkU3k5A0Tb'
 
   const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value })
 

@@ -53,7 +53,18 @@ Everything that's a placeholder right now is marked with `YOUR_`.
      ```
 4. **Project settings (gear) → Your apps → `</>` (Web)** → register app → copy the whole `firebaseConfig` object.
 5. Open `projects/firebase-app/src/firebase/config.js` and **paste your config** over the placeholder object (replace the `YOUR_*` values).
-6. Move your project into "Go Live" for the demo: **Build → App Check → Enforce** (optional) — or keep it in test mode with the auth rule above.
+6. In Firestore, set your **Security Rules** to (so only logged-in users can read/write):
+   ```
+   rules_version = '2';
+   service cloud.firestore {
+     match /databases/{database}/documents {
+       match /{document=**} {
+         allow read, write: if request.auth != null;
+       }
+     }
+   }
+   ```
+   > You DO NOT need "Go Live" or App Check. App Check is an optional extra security layer and can be skipped — it is not required for your demo to work.
 7. Run and test registration + adding/deleting tasks.
 
 > Tip: Firestore rules require `request.auth != null` so only logged-in users (you) can read/write your tasks. The app also filters by `t.uid === user.uid`.
