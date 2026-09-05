@@ -229,13 +229,13 @@
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  gap: 9rem;
+  gap: 12rem;
   list-style: none;
   padding: 0;
   margin: 0 0 clamp(5rem, 8vh, 8.5rem) 0;
 
   @include respond(tab-land) {
-    gap: 7rem;
+    gap: 9rem;
     margin-bottom: 5rem;
   }
 
