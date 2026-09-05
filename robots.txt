@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mubasher-ahmed.vercel.app/sitemap.xml

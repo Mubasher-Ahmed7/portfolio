@@ -1,0 +1,50 @@
+.services {
+  background: $bg;
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+
+    @include respond(tab-land) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include respond(phone) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__card {
+    background: $surface;
+    padding: 3rem;
+    border: 1px solid $border;
+    border-radius: $border-radius;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    }
+  }
+
+  &__card-icon {
+    display: block;
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+  }
+
+  &__card-title {
+    font-weight: 700;
+    font-size: 2rem;
+    color: $heading;
+    margin-bottom: 1rem;
+  }
+
+  &__card-desc {
+    font-size: 1.5rem;
+    color: $muted;
+    line-height: 1.6;
+  }
+}

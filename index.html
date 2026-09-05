@@ -1,19 +1,489 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mubasher Ahmed — Full Stack JavaScript Developer</title>
-    <meta name="description" content="Mubasher Ahmed is a Full Stack JavaScript Developer specializing in modern, responsive websites and web applications with React, Node.js, Express, MongoDB, and Firebase." />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Mubasher Ahmed | Full Stack JavaScript Developer</title>
+    <meta
+      name="description"
+      content="Mubasher Ahmed — Full Stack JavaScript Developer. I build modern, responsive, and high-performance websites and web applications that turn ideas into reliable, professional, and user-friendly digital products."
+    />
+
+    <meta property="og:title" content="Mubasher Ahmed | Full Stack JavaScript Developer" />
+    <meta property="og:description" content="I build modern, responsive, and high-performance websites and web applications." />
+    <meta property="og:image" content="./assets/og-image.png" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Mubasher Ahmed — Full Stack JavaScript Developer" />
-    <meta property="og:description" content="Modern, responsive, high-performance websites and web apps. React, Node.js, Express, MongoDB, Firebase." />
-    <meta property="og:image" content="/og-image.png" />
-    <meta name="theme-color" content="#0f172a" />
+
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <section class="home-hero">
+      <nav class="header">
+        <div class="header__content">
+          <div class="header__main">
+            <div class="header__main-ham-menu-cont">
+              <img
+                src="./assets/svg/ham-menu.svg"
+                alt="hamburger menu"
+                class="header__main-ham-menu"
+              />
+              <img
+                src="./assets/svg/ham-menu-close.svg"
+                alt="hamburger menu close"
+                class="header__main-ham-menu-close d-none"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="header__sm-menu">
+          <div class="header__sm-menu-content">
+            <ul class="header__sm-menu-links">
+              <li class="header__sm-menu-link">
+                <a href="./index.html#about">About</a>
+              </li>
+              <li class="header__sm-menu-link">
+                <a href="./index.html#projects">Projects</a>
+              </li>
+              <li class="header__sm-menu-link">
+                <a href="./index.html#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="home-hero__content">
+        <div class="home-hero__left">
+          <picture>
+            <source srcset="./assets/Mubasher.webp" type="image/webp" />
+            <img
+              src="./assets/Mubasher.png"
+              alt="Mubasher Ahmed"
+              class="home-hero__photo"
+              width="1024"
+              height="1536"
+            />
+          </picture>
+        </div>
+        <div class="home-hero__right">
+          <ul class="hero-nav">
+            <li class="hero-nav__item">
+              <a href="./index.html#about" class="hero-nav__link hero-nav__link--active">About</a>
+            </li>
+            <li class="hero-nav__item">
+              <a href="./index.html#projects" class="hero-nav__link">Projects</a>
+            </li>
+            <li class="hero-nav__item">
+              <a href="./index.html#contact" class="hero-nav__link">Contact</a>
+            </li>
+          </ul>
+          <div class="home-hero__text-content">
+            <p class="home-hero__intro">- Introduction</p>
+            <h1 class="home-hero__name">
+              Mubasher Ahmed
+              <span class="home-hero__role">Full Stack Software Engineer</span>
+            </h1>
+            <p class="home-hero__desc">
+              I ship fast, clean websites and applications from pixel perfect
+              frontends to bulletproof backends. I help businesses and founders
+              turn ideas into production ready products. I build things that work.
+            </p>
+            <a href="./index.html#about" class="home-hero__link-cta">
+              My story &nbsp;➔
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="home-hero__socials">
+        <div class="home-hero__social">
+          <a
+            href="https://github.com/Mubasher-Ahmed7"
+            target="_blank"
+            rel="noreferrer"
+            class="home-hero__social-icon-link"
+            aria-label="GitHub"
+          >
+            <img
+              src="./assets/png/github-ico.png"
+              alt="GitHub"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a
+            href="https://www.linkedin.com/in/mubasher-ahmed-6a0b57398"
+            target="_blank"
+            rel="noreferrer"
+            class="home-hero__social-icon-link"
+            aria-label="LinkedIn"
+          >
+            <img
+              src="./assets/png/linkedin-ico.png"
+              alt="LinkedIn"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a
+            href="https://www.upwork.com/freelancers/~01c1a192b9c3c193a3"
+            target="_blank"
+            rel="noreferrer"
+            class="home-hero__social-icon-link"
+            aria-label="Upwork"
+          >
+            <img
+              src="./assets/svg/upwork-ico.svg"
+              alt="Upwork"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a
+            href="https://www.freelancer.com/u/mubasharahmed131?sb=t"
+            target="_blank"
+            rel="noreferrer"
+            class="home-hero__social-icon-link home-hero__social-icon-link--bd-none"
+            aria-label="Freelancer"
+          >
+            <img
+              src="./assets/svg/freelancer-ico.svg"
+              alt="Freelancer"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="about sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main">About Me</span>
+          <span class="heading-sec__sub">
+            Get to know me — my background, what I do, and how I can help bring
+            your ideas to life.
+          </span>
+        </h2>
+        <div class="about__content">
+          <div class="about__content-main">
+            <h3 class="about__content-title">Get to know me!</h3>
+            <div class="about__content-details">
+              <p class="about__content-details-para">
+                Hey! It's
+                <strong>Mubasher Ahmed</strong>
+                and I'm a <strong> Full Stack Software Engineer </strong>
+                located in Rawalpindi, Pakistan. I've worked on
+                <strong> landing pages </strong>, consulted for clients, and
+                built <strong> full-stack applications </strong> that turn ideas
+                into <strong> reliable, professional digital products </strong>
+                for both business and consumer use.
+              </p>
+              <p class="about__content-details-para">
+                I'm passionate about clean, scalable code and pixel-perfect
+                design. Over the years I've used modern tools like React,
+                Node.js, Express, MongoDB, and Firebase across different
+                industries and verticals. Feel free to
+                <strong>contact</strong> me here.
+              </p>
+            </div>
+            <a href="./index.html#contact" class="btn btn--med btn--theme dynamicBgClr"
+              >Contact</a
+            >
+          </div>
+          <div class="about__content-skills">
+            <h3 class="about__content-title">My Skills</h3>
+            <div class="skills">
+              <div class="skills__skill">HTML5</div>
+              <div class="skills__skill">CSS3</div>
+              <div class="skills__skill">JavaScript (ES6+)</div>
+              <div class="skills__skill">React</div>
+              <div class="skills__skill">Tailwind CSS</div>
+              <div class="skills__skill">Bootstrap</div>
+              <div class="skills__skill">Node.js</div>
+              <div class="skills__skill">Express.js</div>
+              <div class="skills__skill">REST APIs</div>
+              <div class="skills__skill">MongoDB</div>
+              <div class="skills__skill">Firebase</div>
+              <div class="skills__skill">JWT Authentication</div>
+              <div class="skills__skill">Git</div>
+              <div class="skills__skill">GitHub</div>
+              <div class="skills__skill">Figma-to-Code</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="services" class="services sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main">What I Do</span>
+          <span class="heading-sec__sub">
+            From concept to deployment — here's how I can help bring your project to life.
+          </span>
+        </h2>
+        <div class="services__content">
+          <div class="services__card">
+            <span class="services__card-icon">🌐</span>
+            <h3 class="services__card-title">Web Development</h3>
+            <p class="services__card-desc">
+              Modern, responsive websites built for performance, usability, and conversion.
+            </p>
+          </div>
+          <div class="services__card">
+            <span class="services__card-icon">⚛️</span>
+            <h3 class="services__card-title">Frontend Development</h3>
+            <p class="services__card-desc">
+              Interactive interfaces using JavaScript, React, and modern frontend practices.
+            </p>
+          </div>
+          <div class="services__card">
+            <span class="services__card-icon">⚙️</span>
+            <h3 class="services__card-title">Backend Development</h3>
+            <p class="services__card-desc">
+              REST APIs, authentication, databases, and reliable server-side applications.
+            </p>
+          </div>
+          <div class="services__card">
+            <span class="services__card-icon">🛒</span>
+            <h3 class="services__card-title">Full-Stack Applications</h3>
+            <p class="services__card-desc">
+              Complete web applications with frontend, backend, database, authentication, and deployment.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="projects sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-bg">
+          <span class="heading-sec__main">Projects</span>
+          <span class="heading-sec__sub">
+            Here are a few projects that showcase my frontend, full-stack, and
+            Firebase skills — each with a live demo and source code.
+          </span>
+        </h2>
+
+        <div class="projects__content">
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <picture>
+                <source srcset="./assets/project-1-screenshot.webp" type="image/webp" />
+                <img
+                  src="./assets/project-1-screenshot.png"
+                  alt="Responsive Landing Page screenshot"
+                  class="projects__row-img"
+                  width="1024"
+                  height="538"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Responsive Landing Page</h3>
+              <p class="projects__row-content-desc">
+                A clean, mobile-first business landing page converted from a
+                Figma design to production-ready code with Tailwind CSS and React.
+              </p>
+              <a
+                href="./project-1.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                >Case Study</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <picture>
+                <source srcset="./assets/project-2-screenshot.webp" type="image/webp" />
+                <img
+                  src="./assets/project-2-screenshot.png"
+                  alt="Full-Stack CRUD App screenshot"
+                  class="projects__row-img"
+                  width="1024"
+                  height="535"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Full-Stack CRUD App</h3>
+              <p class="projects__row-content-desc">
+                A task manager with user registration, JWT authentication, and
+                full CRUD operations built on MongoDB and Express.
+              </p>
+              <a
+                href="./project-2.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                >Case Study</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <picture>
+                <source srcset="./assets/project-3-screenshot.webp" type="image/webp" />
+                <img
+                  src="./assets/project-3-screenshot.png"
+                  alt="Firebase Realtime App screenshot"
+                  class="projects__row-img"
+                  width="1024"
+                  height="536"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Firebase Realtime App</h3>
+              <p class="projects__row-content-desc">
+                A real-time task list using Firebase Authentication and Firestore
+                with no backend server required.
+              </p>
+              <a
+                href="./project-3.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                >Case Study</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact sec-pad dynamicBg">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main heading-sec__main--lt">Contact</span>
+          <span class="heading-sec__sub heading-sec__sub--lt">
+            Have a project in mind? Send me a message and I'll get back to you
+            within a day.
+          </span>
+        </h2>
+        <div class="contact__form-container">
+          <form action="#" class="contact__form" id="contact-form">
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="name">Name</label>
+              <input
+                required
+                placeholder="Enter Your Name"
+                type="text"
+                class="contact__form-input"
+                name="name"
+                id="name"
+              />
+            </div>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="email">Email</label>
+              <input
+                required
+                placeholder="Enter Your Email"
+                type="email"
+                class="contact__form-input"
+                name="email"
+                id="email"
+              />
+            </div>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="message">Message</label>
+              <textarea
+                required
+                cols="30"
+                rows="10"
+                class="contact__form-input"
+                placeholder="Enter Your Message"
+                name="message"
+                id="message"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn--theme contact__btn">
+              Submit
+            </button>
+            <p id="form-status" class="contact__form-status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.linkedin.com/in/mubasher-ahmed-6a0b57398"
+                aria-label="LinkedIn"
+              >
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/linkedin-ico.png"
+                  alt="LinkedIn"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="https://github.com/Mubasher-Ahmed7" aria-label="GitHub">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/github-ico.png"
+                  alt="GitHub"
+                />
+              </a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.upwork.com/freelancers/~01c1a192b9c3c193a3"
+              >
+                <img
+                  class="main-footer__icon"
+                  src="./assets/svg/upwork-ico.svg"
+                  alt="Upwork"
+                />
+              </a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.freelancer.com/u/mubasharahmed131?sb=t"
+              >
+                <img
+                  class="main-footer__icon main-footer__icon--mr-none"
+                  src="./assets/svg/freelancer-ico.svg"
+                  alt="Freelancer"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">Mubasher Ahmed</h4>
+            <p class="main-footer__short-desc">
+              Full Stack JavaScript Developer building modern, responsive, and
+              high-performance web applications with React, Node.js, and Firebase.
+            </p>
+          </div>
+        </div>
+
+        <div class="main-footer__lower">
+          &copy; Copyright
+          <script>document.write(new Date().getFullYear())</script>
+          . Made by
+          <a rel="noreferrer" target="_blank" href="https://github.com/Mubasher-Ahmed7"
+            >Mubasher Ahmed</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="./config.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>
