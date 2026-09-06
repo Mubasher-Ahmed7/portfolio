@@ -46,6 +46,13 @@ const formStatus = document.getElementById('form-status')
 const { SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY } = window.EMAILJS_CONFIG || {}
 if (!SERVICE_ID) console.error('EmailJS config missing - check config.js')
 
+// Sanitize user input to prevent XSS
+function sanitize(str) {
+  const div = document.createElement('div')
+  div.textContent = str
+  return div.innerHTML
+}
+
 if (contactForm && typeof emailjs !== 'undefined') {
   emailjs.init(PUBLIC_KEY)
 
@@ -53,9 +60,9 @@ if (contactForm && typeof emailjs !== 'undefined') {
     e.preventDefault()
 
     const templateParams = {
-      name: contactForm.name.value,
-      email: contactForm.email.value,
-      message: contactForm.message.value,
+      name: sanitize(contactForm.name.value.substring(0, 100)),
+      email: sanitize(contactForm.email.value.substring(0, 255)),
+      message: sanitize(contactForm.message.value.substring(0, 2000)),
     }
 
     formStatus.textContent = 'Sending...'
