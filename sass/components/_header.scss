@@ -1,3 +1,6 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
+
 .header {
   position: relative;
   z-index: 1000;
@@ -131,13 +134,8 @@
         color: $primary;
       }
     }
-    &:first-child {
-      a {
-        border-top: 1px solid $dark-border;
-      }
+    &:first-child a {
+      border-top: 1px solid $dark-border;
     }
-  }
-  &__sm-menu-link-last {
-    border-bottom: 0;
   }
 }

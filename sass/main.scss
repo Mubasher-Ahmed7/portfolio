@@ -1,23 +1,9 @@
-@import 'abstracts/variables';
-@import 'abstracts/mixins';
-
-
-@import 'base/base';
-
-@import 'abstracts/utilities';
-
-@import 'pages/home';
-@import 'pages/project-case-study';
-
-@import 'components/header';
-@import 'components/footer';
-@import 'components/skills';
-@import 'components/custom';
-@import 'components/services';
-
-
-
-
-
-
-
+@use 'base/base';
+@use 'abstracts/utilities';
+@use 'pages/home';
+@use 'pages/project-case-study';
+@use 'components/header';
+@use 'components/footer';
+@use 'components/skills';
+@use 'components/custom';
+@use 'components/services';

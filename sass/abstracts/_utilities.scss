@@ -1,3 +1,6 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
+
 .heading-primary {
   font-size: 6rem;
   text-transform: uppercase;
